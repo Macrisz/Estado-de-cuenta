@@ -1,0 +1,32 @@
+{
+  "name": "Estado de Cuenta - Simple",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "ritwickdey.liveserver",
+        "mechatroner.rainbow-csv",
+        "pkief.material-icon-theme"
+      ],
+      
+      "settings": {
+        "liveServer.settings.port": 3000,
+        "editor.tabSize": 2,
+        "files.autoSave": "afterDelay",
+        
+        // Configuraciones para Rainbow CSV
+        "rainbow_csv.enable_auto_csv_lint": true,
+        "rainbow_csv.enable_tooltip": true,
+        "rainbow_csv.csv_delimiters": [",", ";", "\t"],
+        "rainbow_csv.enable_separator_autodetection": true
+      }
+    }
+  },
+
+  "forwardPorts": [3000],
+  
+  "postStartCommand": "echo '🚀 Dev Container listo! Rainbow CSV configurado.'"
+}
