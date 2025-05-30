@@ -1,0 +1,36 @@
+campo,valor
+tomador,Carlos Eduardo Martínez López
+tipo_identificacion_tomador,CC 1.052.847.392
+asegurado,Jhon Andres Malvado López
+tipo_identificacion_asegurado,CC 1.052.847.392
+cuenta_poliza,ALZ-2024-078451
+producto,Previsional
+portafolio,Conservador
+fecha_efecto,Marzo 15 de 2024
+fecha_fin_periodo,Marzo 15 de 2025
+estado_poliza,Activa
+fecha_primer_vencimiento,Abril 15 de 2024
+valor_objetivo_inversion,29160
+valor_asegurado_fallecimiento,350000000
+forma_pago,Semanal
+primas_pagadas,27
+primas_pendientes,23
+primas_en_mora,0
+primas_recaudadas,14580
+valorizacion_acumulada_corte,1175.8
+saldo_actual,15755.8
+rentabilidad_promedio_obtenida,2.8
+rentabilidad_acumulada,8.06
+rentabilidad_promedio_semanal,2.8
+bono_fidelidad_proyectado,6480000.00
+prima_semanal,540
+proyeccion_final,29160.2
+nota_rentabilidad,Esta rentabilidad es la rentabilidad acumulada desde la primera semana de inversión
+texto_bono_fidelidad,Tenemos derecho a tu bono de fidelidad el finalizar tu objetivo de ahorro sólo si cumples con tu plan objetivo de ahorro de manera completa. El bono corresponde a la valorización de tu última prima anualizada.
+compania,Allianz Seguros de Vida S.A
+nit_compania,860.027.404-1
+direccion_compania,Cra.13A No.29-24 - Bogotá -Colombia
+website_compania,www.allianz.co
+codigo_clausulado,DQ/MM/AAAA-1401-P-41-PENSIONJOOOXXXV01-0001
+codigo_nota_tecnica,DQMMAAAA-1401-NT-P-41-PENSIONJOOOXXXV01
+

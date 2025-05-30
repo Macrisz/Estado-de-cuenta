@@ -433,8 +433,8 @@
         .walker-container {
             position: absolute;
             bottom: 60px;
-            left: 60px;
-            right: 60px;
+            left: 85px; /* Ajustado para alinearse con el área de datos del gráfico */
+            right: 25px; /* Ajustado para alinearse con el área de datos del gráfico */
             height: 30px;
             z-index: 15;
             pointer-events: none;
@@ -462,7 +462,7 @@
         /* Icono del caminante */
         .walker-icon {
             position: absolute;
-            bottom: 5px;
+            bottom: -15px; /* Posicionado directamente sobre la línea */
             width: 30px;
             height: 30px;
             background-color: #4A90E2;
@@ -486,4 +486,5 @@
             font-weight: bold;
             text-align: center;
             width: 70px;
+            display: none; /* Oculta el texto del progreso */
         }
