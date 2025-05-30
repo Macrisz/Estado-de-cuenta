@@ -1,0 +1,35 @@
+campo,valor
+tomador,Carlos Eduardo Martínez López
+tipo_identificacion_tomador,CC 1.052.847.392
+asegurado,Carlos Eduardo Martínez López
+tipo_identificacion_asegurado,CC 1.052.847.392
+cuenta_poliza,ALZ-2024-078451
+producto,Previsional
+portafolio,Conservador
+fecha_efecto,Marzo 15 de 2024
+fecha_fin_periodo,Marzo 15 de 2025
+estado_poliza,Activa
+fecha_primer_vencimiento,Abril 15 de 2024
+valor_objetivo_inversion,27000
+valor_asegurado_fallecimiento,350.000.000
+forma_pago,Mensual
+primas_pagadas,10
+primas_pendientes,50
+primas_en_mora,0
+primas_recaudadas,5400
+valorizacion_acumulada_corte,518.3
+saldo_actual,5918.3
+rentabilidad_promedio_obtenida,4.85
+rentabilidad_acumulada,9.6
+rentabilidad_promedio_mensual,4.85
+nota_rentabilidad,Esta rentabilidad es la rentabilidad acumulada desde el primer mes de inversión
+bono_fidelidad_proyectado,6480000
+prima_mensual,540
+meses_totales,60
+texto_bono_fidelidad,Tenemos derecho a tu bono de fidelidad el finalizar tu objetivo de ahorro sólo si cumples con tu plan objetivo de ahorro de manera completa. El bono corresponde a la valorización de tu última prima anualizada.
+compania,Allianz Seguros de Vida S.A
+nit_compania,860.027.404-1
+direccion_compania,Cra.13A No.29-24 - Bogotá -Colombia
+website_compania,www.allianz.co
+codigo_clausulado,DQ/MM/AAAA-1401-P-41-PENSIONJOOOXXXV01-0001
+codigo_nota_tecnica,DQMMAAAA-1401-NT-P-41-PENSIONJOOOXXXV01 
