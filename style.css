@@ -126,7 +126,7 @@ body {
 
 .chart-container {
     padding: 20px 30px;
-    height: 350px;
+    /* height: 350px; */
     position: relative;
     margin-right: 26px;
 }
@@ -178,8 +178,16 @@ body {
 .legend-blue { background-color: #4ECDC4; }
 .legend-green { background-color: #95E1A3; }
 
+.Infografia{
+    background-color: #ccc;
+    height: 100px;
+    margin-right: 26px;
+    padding: 20px 30px;
+}
+
 .chart-values {
-    padding-right: 20px;
+    margin-right: 26px;
+    padding: 20px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -204,10 +212,7 @@ body {
 
 .performance-section {
     margin-right: 26px;
-    margin-top: 65px;
-    /* padding: 6px 30px; */
-    padding-right: 20px;
-    padding-left: 28px;
+    padding: 20px 30px;
     padding-top: 6px;
     padding-bottom: 6px;
     font-size: 12px;

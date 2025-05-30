@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,116 +8,122 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Sidebar with Logo -->
         <div class="sidebar">
-             <img src="Recursos\Vigilado.png" class="sidebar-logo">
-            <!-- <div class="sidebar-logo">
-                LOGO VERTICAL
-                <br>
-                ALLIANZ
-            </div> -->
+            <img src="Recursos\Vigilado.png" class="sidebar-logo">
         </div>
-        
+
         <!-- Main Content -->
         <div class="main-content">
             <!-- Header -->
             <div class="header">
-            <div class="company-info">
-                <h2>Allianz Capital Life</h2>
-                <div class="subtitle">Seguro de Pensión</div>
-                <div class="company-id">Allianz Seguros de Vida S.A. Nit 860.027.404-1</div>
+                <div class="company-info">
+                    <h2>Allianz Capital Life</h2>
+                    <div class="subtitle">Seguro de Pensión</div>
+                    <div class="company-id">Allianz Seguros de Vida S.A. Nit 860.027.404-1</div>
+                </div>
+                <img src="Recursos\Logo allianz.svg" class="logo-right">
             </div>
-            <img src="Recursos\Logo allianz.svg" class="logo-right">
-        </div>
 
-        <!-- Account Status Section -->
-        <div class="section-header">Estado de cuenta</div>
-        <div class="account-details">
-            <div>
-                <div class="detail-row">
-                    <span class="detail-label">Tomador:</span>
-                    <span class="detail-value">Nombres y Apellidos</span>
+            <!-- Account Status Section -->
+            <div class="section-header">Estado de cuenta</div>
+            <div class="account-details">
+                <div>
+                    <div class="detail-row">
+                        <span class="detail-label">Tomador:</span>
+                        <span class="detail-value">Nombres y Apellidos</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Tipo de identificación:</span>
+                        <span class="detail-value">CC 000000000</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Asegurado:</span>
+                        <span class="detail-value">Nombres y Apellidos</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Tipo de identificación:</span>
+                        <span class="detail-value">CC 000000000</span>
+                    </div>
                 </div>
-                <div class="detail-row">
-                    <span class="detail-label">Tipo de identificación:</span>
-                    <span class="detail-value">CC 000000000</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Asegurado:</span>
-                    <span class="detail-value">Nombres y Apellidos</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Tipo de identificación:</span>
-                    <span class="detail-value">CC 000000000</span>
+                <div>
+                    <div class="detail-row">
+                        <span class="detail-label">Cuenta No. Póliza:</span>
+                        <span class="detail-value">00000</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Producto:</span>
+                        <span class="detail-value">Previsional</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Portafolio:</span>
+                        <span class="detail-value">Conservador</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Fecha de efecto:</span>
+                        <span class="detail-value">Enero 5 de 2025</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Fecha fin del periodo:</span>
+                        <span class="detail-value">Enero 5 de 2030</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Estado póliza:</span>
+                        <span class="detail-value">Activa</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Fecha de primer vencimiento:</span>
+                        <span class="detail-value">Mayo 31 de 2025</span>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="detail-row">
-                    <span class="detail-label">Cuenta No. Póliza:</span>
-                    <span class="detail-value">00000</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Producto:</span>
-                    <span class="detail-value">Previsional</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Portafolio:</span>
-                    <span class="detail-value">Conservador</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Fecha de efecto:</span>
-                    <span class="detail-value">Enero 5 de 2025</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Fecha fin del periodo:</span>
-                    <span class="detail-value">Enero 5 de 2030</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Estado póliza:</span>
-                    <span class="detail-value">Activa</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Fecha de primer vencimiento:</span>
-                    <span class="detail-value">Mayo 31 de 2025</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- Chart Section -->
-        <div class="section-header">Evolución de mi plan de inversión</div>
-        <div class="chart-container">
-            <canvas id="growthChart" width="100%" height="250"></canvas>
-            
-            <!-- Burbuja 1: Primas aportadas (azul) -->
-            <div class="chart-bubble bubble-aportes" style="position: absolute; top: 10px; left: 100px; background: rgba(25, 118, 210, 0.1); border: 2px solid #1976D2; border-radius: 8px; padding: 8px 12px; font-size: 11px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10; min-width: 120px; text-align: center; color: #000;">
-                <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #1976D2; color: white; font-weight: bold; font-size: 12px; line-height: 20px; text-align: center; margin-right: 5px; vertical-align: middle;">+</span>
-                Primas aportadas<br>
-                <span style="color: #1976D2; font-weight: bold;">$5,400</span>
-                <div style="font-size: 9px; color: #000; margin-top: 4px;">
-                    16.7% cotizado
+            <!-- Chart Section -->
+            <div class="section-header">Evolución de mi plan de inversión</div>
+            <div class="chart-container">
+                <canvas id="growthChart" width="" height=""></canvas>
+                <!-- Burbuja 1: Primas aportadas (azul) -->
+                <div class="chart-bubble bubble-aportes"
+                    style="position: absolute; top: 10px; left: 100px; background: rgba(0, 20, 41, 0.1); border: 2px solid #1976D2; border-radius: 8px; padding: 8px 12px; font-size: 11px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10; min-width: 120px; text-align: center; color: #000;">
+                    <span
+                        style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #1976D2; color: white; font-weight: bold; font-size: 12px; line-height: 20px; text-align: center; margin-right: 5px; vertical-align: middle;">+</span>
+                    Primas aportadas<br>
+                    <span style="color: #1976D2; font-weight: bold;">$5,400</span>
+                    <div style="font-size: 9px; color: #000; margin-top: 4px;">
+                        16.7% cotizado
+                    </div>
+                </div>
+
+                <!-- Burbuja 2: Ahorro programado (verde) -->
+                <div class="chart-bubble bubble-rendimientos"
+                    style="position: absolute; top: 10px; left: 280px; background: rgba(67, 160, 71, 0.1); border: 2px solid #43A047; border-radius: 8px; padding: 8px 12px; font-size: 11px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10; min-width: 120px; text-align: center; color: #000;">
+                    <span
+                        style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #43A047; color: white; font-weight: bold; font-size: 12px; line-height: 20px; text-align: center; margin-right: 5px; vertical-align: middle;">+</span>
+                    Ahorro programado<br>
+                    <span style="color: #43A047; font-weight: bold;">$32,400</span>
+                    <div style="font-size: 9px; color: #000; margin-top: 4px;">
+                        100% cotizado
+                    </div>
+                </div>
+
+                <!-- Burbuja 3: Valor objetivo (naranja) -->
+                <div class="chart-bubble bubble-acumulado"
+                    style="position: absolute; top: 10px; left: 500px; background: rgba(255, 152, 0, 0.1); border: 2px solid #FF9800; border-radius: 8px; padding: 8px 12px; font-size: 11px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10; min-width: 120px; text-align: center; color: #000;">
+                    <span
+                        style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #FF9800; color: white; font-weight: bold; font-size: 12px; line-height: 20px; text-align: center; margin-right: 5px; vertical-align: middle;">=</span>
+                    Valor objetivo de ahorro<br>
+                    <span style="color: #FF9800;">$40,786</span>
+                    <div style="font-size: 9px; color: #000; margin-top: 4px;">
+                        Valores proyectados
+                    </div>
                 </div>
             </div>
-            
-            <!-- Burbuja 2: Ahorro programado (verde) -->
-            <div class="chart-bubble bubble-rendimientos" style="position: absolute; top: 10px; left: 280px; background: rgba(67, 160, 71, 0.1); border: 2px solid #43A047; border-radius: 8px; padding: 8px 12px; font-size: 11px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10; min-width: 120px; text-align: center; color: #000;">
-                <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #43A047; color: white; font-weight: bold; font-size: 12px; line-height: 20px; text-align: center; margin-right: 5px; vertical-align: middle;">+</span>
-                Ahorro programado<br>
-                <span style="color: #43A047; font-weight: bold;">$32,400</span>
-                <div style="font-size: 9px; color: #000; margin-top: 4px;">
-                    100% cotizado
-                </div>
-            </div>
-            
-            <!-- Burbuja 3: Valor objetivo (naranja) -->
-            <div class="chart-bubble bubble-acumulado" style="position: absolute; top: 10px; left: 500px; background: rgba(255, 152, 0, 0.1); border: 2px solid #FF9800; border-radius: 8px; padding: 8px 12px; font-size: 11px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10; min-width: 120px; text-align: center; color: #000;">
-                <span style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #FF9800; color: white; font-weight: bold; font-size: 12px; line-height: 20px; text-align: center; margin-right: 5px; vertical-align: middle;">=</span>
-                Valor objetivo de ahorro<br>
-                <span style="color: #FF9800;">$40,786</span>
-                <div style="font-size: 9px; color: #000; margin-top: 4px;">
-                    Valores proyectados
-                </div>
+
+            <div class="Infografia">
+
             </div>
             
             <div class="chart-values">
@@ -146,6 +153,7 @@
                         <span class="value-amount">0</span>
                     </div>
                 </div>
+
                 <div>
                     <div class="value-row">
                         <span class="value-label">Primas recaudadas:</span>
@@ -165,65 +173,59 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- Performance Section -->
+            <div class="performance-section">
+                <div class="performace-row">
+                    <span class="value-label">Rentabilidad acumulada:</span>
+                    <span class="value-amount">9,13%</span>
+                </div>
+                <div class="performace-row">
+                    <span class="value-label">Efectiva Anual:</span>
+                    <span class="value-amount">185,31%</span>
+                </div>
+            </div>
 
-        <!-- Performance Section -->
-        <div class="performance-section">
-                <div class="performace-row">
-                        <span class="value-label">Rentabilidad acumulada:</span>
-                        <span class="value-amount">9,13%</span>
-                    </div>
-                <!-- <div class="performance-item">
-                    <span class="performance-label">Rentabilidad acumulada</span>
-                    <span class="performance-value">9,13%</span>
-                </div> -->
-                <div class="performace-row">
-                        <span class="value-label">Efectiva Anual:</span>
-                        <span class="value-amount">185,31%</span>
-                    </div>
-                <!-- <div class="performance-item">
-                    <span class="performance-label">Efectiva Anual:</span>
-                    <span class="performance-value">185,31%</span>
-                </div> -->
-        </div>
-        <div class="contenedor_nota">
+            <div class="contenedor_nota">
                 <img src="Recursos\Info Circle Outline.svg" class="info-icon" alt="icono de información">
-                <span class="nota">Nota: Esta rentabilidad es la rentabilidad acumulada desde la primera fecha de aporte</span>
-        </div>
+                <span class="nota">Nota: Esta rentabilidad es la rentabilidad acumulada desde la primera fecha de
+                    aporte</span>
+            </div>
 
-        <!-- Fidelity Bonus Section -->
-        <div class="fidelity-section">
-            <div class="fidelity-header">
-                <span class="fidelity-title">Bono por fidelidad</span>
-                <span class="fidelity-value">Valor bono proyectado</span>
-            </div>
-            <div class="fidelity-content">
-                <div class="fidelity-text">
-                Tenemos derecho a tu bono de fidelidad el finalizar tu objetivo de ahorro sólo, si cumples con 
-                <br>tu plan objetivo de ahorro de manera completa. El bono corresponde a la valorización de <br>
-                tu última prima anualizada. (* Ver condiciones)"<br>
-                
-            </div>
-                <div class="fidelity-text">
-                $ 6.480.000,00
-            </div>
-            </div>
-            
-        </div>
+            <!-- Fidelity Bonus Section -->
+            <div class="fidelity-section">
+                <div class="fidelity-header">
+                    <span class="fidelity-title">Bono por fidelidad</span>
+                    <span class="fidelity-value">Valor bono proyectado</span>
+                </div>
+                <div class="fidelity-content">
+                    <div class="fidelity-text">
+                        Tenemos derecho a tu bono de fidelidad el finalizar tu objetivo de ahorro sólo, si cumples con
+                        <br>tu plan objetivo de ahorro de manera completa. El bono corresponde a la valorización de <br>
+                        tu última prima anualizada. (* Ver condiciones)"<br>
 
-        <!-- Footer -->
-        <div class="footer">
-            <div class="Allianz_Seguros">
-                Allianz Seguros de Vida S.A | Cra.13A No.29-24 - Bogotá -Colombia | www.allianz.co | NiL 8600274404-1
+                    </div>
+                    <div class="fidelity-text">
+                        $ 6.480.000,00
+                    </div>
+                </div>
+
             </div>
-            <div class="footer-codes">
-                Código clausulado - DQ/MM/AAAA-1401-P-41-PENSIONJOOOXXXV01-0001<br>
-                Código nota técnica - DQMMAAAA-1401-NT-P-41-PENSIONJOOOXXXV01
-            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="Allianz_Seguros">
+                    Allianz Seguros de Vida S.A | Cra.13A No.29-24 - Bogotá -Colombia | www.allianz.co | NiL
+                    8600274404-1
+                </div>
+                <div class="footer-codes">
+                    Código clausulado - DQ/MM/AAAA-1401-P-41-PENSIONJOOOXXXV01-0001<br>
+                    Código nota técnica - DQMMAAAA-1401-NT-P-41-PENSIONJOOOXXXV01
+                </div>
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
