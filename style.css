@@ -18,7 +18,8 @@ body {
     display: flex;
 }
 
-.sidebar {
+/* Logo vigilado */
+.logo-vigilado {
     width: 32px;
     display: flex;
     align-items: center;
@@ -26,7 +27,7 @@ body {
     padding: 20px 5px;
 }
 
-.sidebar-logo {
+.imagen-logo {
     transform: rotate(-90deg); /* Gira la imagen 90 grados */
     transform-origin: center;
     width: 200px;
@@ -42,9 +43,9 @@ body {
     justify-content: space-between;
     align-items: center;
     /* padding: 20px 30px; */
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-right: 26px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 26px;
 }
 
 .logo-left {
@@ -71,75 +72,101 @@ body {
     color: #666;
 }
 
-.company-info {
+.info-capital-life {
     color: #3DA556;
     font-size: 14px;
 }
 
-.company-info h2 {
+.info-capital-life h2 {
     font-size: 18px;
 }
 
-.company-info .subtitle {
+.info-capital-life .subtitle {
     font-weight: normal;
     margin-bottom: 3px;
 }
 
-.company-id {
+.nit-id {
     font-size: 12px;
     color: #666;
 }
 
-.section-header {
+.estado-de-cuenta-header {
+    text-align: center;
     margin-right: 26px;
     background-color: #003781;
     color: white;
     padding: 10px 30px;
     font-weight: bold;
-    font-size: px;
+    font-size: 16px;
+    border-radius: 6px 6px 0 0;  /* top-left, top-right, bottom-right, bottom-left */
+
 }
 
-.account-details {
+.detalle {
     margin-right: 26px;
-    padding: 20px 30px;
+    margin-bottom: 12px;
+    padding: 12px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     font-size: 12px;
+    border: 1px solid #C2C2C2;         /* Bordes generales */
+    border-top: none;                  /* Elimina solo el superior */
+    border-radius: 0 0 6px 6px;  /* top-left, top-right, bottom-right, bottom-left */
 }
 
-.detail-row {
+.detalle-cuenta {
     display: flex;
     margin-bottom: 5px;
     justify-content: space-between;
 }
 
-.detail-label {
+.nombre-label {
     font-weight: bold;
     color: #333;
 }
 
-.detail-value {
+.valor-label {
     font-weight: regular;
     color: #333;
 }
 
+.Evolución-inversion{
+    margin-right: 26px;
+
+    background-color: #003781;
+    color: white;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px 6px 0 0;  /* top-left, top-right, bottom-right, bottom-left */
+
+}
+
+/* Grafico */
+
 .chart-container {
-    padding: 20px 30px;
-    /* height: 350px; */
     position: relative;
     margin-right: 26px;
+    margin-bottom: 12px;
+    padding: 20px;
+    border: 1px solid #C2C2C2;         /* Bordes generales */
+    border-top: none;                  /* Elimina solo el superior */
+    border-radius: 0 0 6px 6px;  /* top-left, top-right, bottom-right, bottom-left */
+    
+    
 }
 
 #growthChart {
     width: 100% !important;
-    height: 250px !important;
-    margin-bottom: 20px;
+    height: 300px !important;
+    margin-bottom: 24px;
 }
 
 .chart-placeholder {
     width: 100%;
-    height: 250px;
+    height: 300px;
     background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
                 linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
                 linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
@@ -178,180 +205,21 @@ body {
 .legend-blue { background-color: #4ECDC4; }
 .legend-green { background-color: #95E1A3; }
 
-
-
-.chart-values {
-    margin-right: 26px;
-    padding: 20px 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    font-size: 12px;
-}
-
-.value-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-.value-label {
-    color: #333;
-    font-weight: bold;
-}
-
-.value-amount {
-    font-weight: regular;
-    color: #333;
-}
-
-.performance-section {
-    margin-right: 26px;
-    padding: 20px 30px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-size: 12px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    background-color: #F1FDFF;
-}
-
-.performace-row {
-    display: flex;
-    justify-content: space-between;
-    /* margin-bottom: 5px; */
-}
-
-/* .performance-row {
-   display: flex;
-   justify-content: space-between;
-   
-} */
-
-.performance-item {
-    display: flex;
-    gap: 246px;
-}
-
-.performance-label {
-    color: #333;
-}
-
-.performance-value {
-    font-weight: bold;
-    color: #333;
-}
-
-.contenedor_nota {
-    display: flex;
-    gap: 6px;
-    margin-top: 10px;
-    padding-bottom: 12px;
-    margin-left: 27px;
-    align-items: center;
-}
-
-.nota {
-    font-size: 12px;
-}
-
-.info-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.fidelity-section {
-    color: white;
-    font-size: 11px;
-    margin-bottom: 20px;
-}
-
-.fidelity-header {
-    margin-right: 26px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 24px;
-    padding-right: 26px;
-    background-color: #3DA556;
-}
-
-.fidelity-content{
-    margin-right: 26px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 24px;
-    padding-right: 26px;
-    background-color: #F1FDFF;
-}
-
-.fidelity-text{
-    color: #231F20;
-}
-
-.fidelity-title {
-    font-weight: bold;
-    font-size: 12px;
-}
-
-.fidelity-value {
-    font-weight: bold;
-    font-size: 12px;
-}
-
-.fidelity-text {
-    line-height: 1.4;
-    margin-bottom: 10px;
-}
-
-.footer {
-    /* padding: 1px 30px; */
-    margin-bottom: 24px;
-    font-size: 10px;
-    /* color: #666; */
-    line-height: 1.4;
-}
-
-.footer-codes {
-    font-size: 12px;
-}
-
-.Allianz_Seguros{
-    color:#3DA556 ;
-    font-size: 12px;
-    font-weight: bold;
-} 
-
-.Infografia{
-    height: 100px;
-    margin-right: 26px;
-
-}
-
-/* Contenedor principal limitado a 100px de altura */
+/* Contenedor infografia */
         .compact-container {
-            border-radius: 8px;
-            padding-left: 28px;
-            padding-right: 26px;
             /* padding: 20px 12px; */
-            /* width: 100%;
-            height: 100px; */
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
         /* Header con información de inicio y meta */
-        .header {
-            margin-top: -20px;
-            margin: -10px;
-            padding-left: 10px;
+        .header-infografia {
+            padding-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .start-section, .end-section {
@@ -480,3 +348,163 @@ body {
                 font-size: 7px;
             }
         }
+        
+/* Datos */
+
+.Datos-valor{
+    margin-right: 26px;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 12px;
+}
+
+.Datos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.Nombre {
+    color: #333;
+    font-weight: bold;
+}
+
+.Valor {
+    font-weight: regular;
+    color: #333;
+}
+
+
+/* tabla retabilidad */
+
+.rentabilidad-table {
+    width: 97%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    /* border: 1px solid #cccccc; */
+}
+
+
+.rentabilidad-header {
+    background-color: #00b050;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+    /* padding: 8px 12px; */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 24px;
+}
+
+
+.rentabilidad-table td {
+    /* border: 1px solid #cccccc; */
+    /* padding: 8px 10px; */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 27px;
+    vertical-align: middle;
+    background-color: #F1FDFF;
+    font-size: 12px;
+}
+
+/* nota */
+
+.nota-section {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding:0px 24px;
+}
+
+
+.info-icon {
+    width: 16px;
+    height: 16px;
+} 
+
+.nota-text {
+    color: #003781;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Tabla bono */
+
+.bono-table {
+    width: 97%;
+    border-collapse: collapse;
+    /* border: 1px solid #cccccc; */
+    margin-bottom: 20px;
+}
+
+.bono-header-left {
+    text-align: left;
+    width: 70%;
+}
+
+.bono-header {
+    background-color: #00b050;
+    color: white;
+    font-weight: bold;
+    /* padding: 8px 12px; */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+.bono-content {
+    padding: 6px;
+    padding-left: 24px;
+    /* border: 1px solid #cccccc; */
+    background-color: #F1FDFF;
+}
+
+.bono-text {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.bono-value {
+    text-align: right;
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+    padding: 12px;
+    padding-right: 20px;
+    /* border: 1px solid #cccccc; */
+    background-color: #F1FDFF;
+}
+
+/* footer */
+
+.footer {
+    /* padding: 1px 30px; */
+    margin-bottom: 24px;
+    font-size: 10px;
+    /* color: #666; */
+    line-height: 1.4;
+}
+
+.footer-codes {
+    font-size: 12px;
+}
+
+.Allianz_Seguros{
+    color:#3DA556 ;
+    font-size: 12px;
+    font-weight: bold;
+} 
+
+.Infografia{
+    height: 100px;
+    margin-right: 26px;
+
+}
+

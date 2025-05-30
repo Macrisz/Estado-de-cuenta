@@ -66,7 +66,7 @@ async function createChart() {
             labels: mesesCompletos,
             datasets: [
                 {
-                    label: 'Ahorro bruto',
+                    label: 'Ahorro programado',
                     data: ahorrosBrutosCompletos,
                     borderColor: '#43A047',
                     backgroundColor: 'transparent',
@@ -96,7 +96,7 @@ async function createChart() {
                     spanGaps: false
                 },
                 {
-                    label: 'Proyección',
+                    label: 'Valor objetivo de ahorro',
                     data: lineaProyeccionNaranja,
                     borderColor: '#FF9800',
                     backgroundColor: 'transparent',
